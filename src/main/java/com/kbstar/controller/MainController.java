@@ -22,4 +22,10 @@ public class MainController {
         model.addAttribute("center","tables");
         return "index";
     }
+
+    @RequestMapping("/dashboard")
+    public String dashboard(Model model){
+        model.addAttribute("center","dashboard");
+        return "index";
+    }
 }
